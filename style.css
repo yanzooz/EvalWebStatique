@@ -57,9 +57,10 @@ html {
     h1 {
       font-weight: 900;
       margin-bottom: 1rem;
+      font-style: italic;
     }
     p {
-      font-weight: 500;
+      font-weight: 600;
     }
     nav ul {
       display: flex;
@@ -257,9 +258,10 @@ html {
     }
     h1 {
       font-weight: 900;
+      font-style: italic;
     }
     p {
-      font-weight: 500;
+      font-weight: 600;
     }
     nav ul {
       display: flex;
