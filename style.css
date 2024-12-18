@@ -32,6 +32,12 @@ html {
 }
 
 @media (min-width: 800px) {
+    div#logoHeader{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 5rem;
+    }
   header {
     background-image: linear-gradient(
         var(--black-transparent),
@@ -40,16 +46,17 @@ html {
       url("header_image.avif");
     background-position: top;
     background-size: cover;
-    padding: 4rem 0rem;
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     img {
-      width: 2rem;
+      width: 3rem;
     }
     h1 {
       font-weight: 900;
+      margin-bottom: 1rem;
     }
     p {
       font-weight: 500;
@@ -59,7 +66,7 @@ html {
       align-items: center;
       li {
         list-style: none;
-        margin: 0.5rem;
+        margin: 1rem;
       }
       a {
         color: white;
@@ -234,11 +241,17 @@ html {
       url("header_image.avif");
     background-position: top;
     background-size: cover;
-    padding: 4rem 0rem;
+    padding-bottom: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
+    div#logoHeader{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 5rem;
+    }
     img {
       width: 2rem;
     }
