@@ -1,0 +1,387 @@
+:root {
+  --primary-color: rgb(0, 128, 128);
+  --primary-color-transparent: rgba(0, 128, 128, 0.5);
+  --secondary-color: rgb(0, 51, 102);
+  --black-transparent: rgba(0, 0, 0, 0.3);
+  --main-font: Montserrat, sans-serif;
+  --footer-background-color: #20232a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--main-font);
+  svg {
+    width: 2.5rem;
+  }
+}
+
+.button-square {
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  color: white;
+  border: none;
+}
+
+@media (min-width: 800px) {
+  header {
+    background-image: linear-gradient(
+        var(--black-transparent),
+        var(--primary-color-transparent)
+      ),
+      url("header_image.avif");
+    background-position: top;
+    background-size: cover;
+    padding: 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    img {
+      width: 2rem;
+    }
+    h1 {
+      font-weight: 900;
+    }
+    p {
+      font-weight: 500;
+    }
+    nav ul {
+      display: flex;
+      align-items: center;
+      li {
+        list-style: none;
+        margin: 0.5rem;
+      }
+    }
+  }
+
+  main {
+    section#top {
+      margin-top: 3rem;
+      padding: 0px 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        object-fit: cover;
+        height: 12rem;
+        width: 13rem;
+      }
+      div#description {
+        margin-left: 1rem;
+        width: 20rem;
+        h2 {
+          text-decoration: underline;
+          color: var(--primary-color);
+          margin-left: -3rem;
+          font-size: 20px;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          color: var(--primary-color);
+          font-size: 13px;
+        }
+      }
+    }
+    section#middle {
+      margin-top: 5rem;
+      div#logoFeatures {
+        display: flex;
+
+        #left {
+          border-top: rgb(212, 212, 212) 1px solid;
+          border-right: rgb(212, 212, 212) 1px solid;
+          padding: 2rem 0;
+          width: 50%;
+          text-align: center;
+        }
+        #right {
+          border-top: rgb(212, 212, 212) 1px solid;
+          padding: 2rem 0;
+          width: 50%;
+          text-align: center;
+        }
+      }
+      div#immoBackground {
+        background-image: linear-gradient(
+            var(--black-transparent),
+            var(--primary-color-transparent)
+          ),
+          url("main_image.avif");
+        background-position: center;
+        background-size: cover;
+        padding: 4rem 0rem;
+        padding-left: 50%;
+        padding-right: 5rem;
+        color: white;
+        h2 {
+          margin-left: -5rem;
+          margin-bottom: 1rem;
+        }
+        p {
+          margin-bottom: 2rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    section#bottom {
+      padding: 2.5rem 0rem;
+      padding-left: 20%;
+      h2 {
+        color: var(--primary-color);
+        margin-bottom: 4rem;
+      }
+      #container {
+        display: flex;
+        ul#statList {
+          display: flex;
+          justify-content: center;
+          li.list {
+            list-style: none;
+            margin: 0px 1rem;
+            p:nth-child(1) {
+              font-weight: 800;
+              font-size: 1.5rem;
+              color: var(--secondary-color);
+            }
+            p:nth-child(2) {
+              margin-top: 1.5rem;
+              font-size: 0.8rem;
+            }
+          }
+        }
+        div#descriptionRight {
+          margin-left: 2rem;
+          width: 35rem;
+          line-height: 1.5;
+          button {
+            margin-top: 1rem;
+            background-color: var(--primary-color);
+            padding: 0.5rem;
+            color: white;
+            border: none;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    footer {
+      background-color: var(--footer-background-color);
+      display: flex;
+      justify-content: space-around;
+
+      padding: 2rem 10rem;
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 300;
+      #left {
+        .colorText {
+          display: flex;
+          margin-bottom: 1.5rem;
+          p:nth-child(1) {
+            font-weight: 500;
+            color: var(--primary-color);
+            margin-right: 1rem;
+          }
+        }
+      }
+      #right {
+        width: 50%;
+        img {
+          width: 5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+  header {
+    background-image: linear-gradient(
+        var(--black-transparent),
+        var(--primary-color-transparent)
+      ),
+      url("header_image.avif");
+    background-position: top;
+    background-size: cover;
+    padding: 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    img {
+      width: 2rem;
+    }
+    h1 {
+      font-weight: 900;
+    }
+    p {
+      font-weight: 500;
+    }
+    nav ul {
+      display: flex;
+      align-items: center;
+      li {
+        list-style: none;
+        margin: 0.5rem;
+      }
+    }
+  }
+
+  main {
+    section#top {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+
+      img {
+        object-fit: cover;
+        width: 80%;
+        margin: 2rem;
+      }
+      div#description {
+        width: 100%;
+        h2 {
+          text-decoration: underline;
+          color: var(--primary-color);
+          font-size: 16px;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          color: var(--primary-color);
+          font-size: 13px;
+        }
+      }
+    }
+    section#middle {
+      margin-top: 3rem;
+      div#logoFeatures {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #left {
+          border-top: rgb(212, 212, 212) 1px solid;
+          padding: 2rem 0;
+          width: 100%;
+          text-align: center;
+        }
+        #right {
+          border-top: rgb(212, 212, 212) 1px solid;
+          padding: 2rem 0;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      div#immoBackground {
+        background-image: linear-gradient(
+            var(--black-transparent),
+            var(--primary-color-transparent)
+          ),
+          url("main_image.avif");
+        background-position: center;
+        background-size: cover;
+        padding: 4rem 0rem;
+        padding-right: 5rem;
+        color: white;
+        text-align: center;
+        h2 {
+          margin-bottom: 1rem;
+        }
+        p {
+          margin-bottom: 2rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+    section#bottom {
+      padding-top: 2.5rem;
+      text-align: center;
+      h2 {
+        color: var(--primary-color);
+        margin-bottom: 4rem;
+      }
+      #container {
+        ul#statList {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 2rem;
+          li.list {
+            list-style: none;
+            margin: 0px 1rem;
+            p:nth-child(1) {
+              font-weight: 800;
+              font-size: 1.5rem;
+              color: var(--secondary-color);
+            }
+            p:nth-child(2) {
+              margin-top: 1.5rem;
+              font-size: 0.8rem;
+            }
+          }
+        }
+        div#descriptionRight {
+          padding: 10%;
+          line-height: 1.5;
+          p {
+            text-align: start;
+          }
+          button {
+            margin-top: 1rem;
+            background-color: var(--primary-color);
+            padding: 0.5rem;
+            color: white;
+            border: none;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    footer {
+      background-color: var(--footer-background-color);
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 0rem;
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 300;
+      #left {
+        display: flex;
+        justify-content: space-around;
+        .colorText {
+          display: flex;
+          flex-direction: column;
+         width: 30%;
+         margin: 0rem 2rem;
+          margin-bottom: 1.5rem;
+          p:nth-child(1) {
+            font-weight: 500;
+            color: var(--primary-color);
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+      #right {
+        margin: 0rem 1rem;
+        text-align: center;
+        img {
+          width: 5rem;
+        }
+      }
+    }
+  }
+}
